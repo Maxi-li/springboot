@@ -26,7 +26,11 @@ public class StudentController {
 	public String index(){
 		return "index";
 	}
-
+	
+	public string test(){
+	   system.out.println(.......)
+	}
+		
 
 	// 登录
 	@RequestMapping("login")
