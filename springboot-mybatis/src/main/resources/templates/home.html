@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    spring boot！！！！
+    <hr/>
+    <span th:text="欢迎+${student.username}">马云</span>
+    <span th:text="|欢迎,${student.username}|">马云</span>
+    <table border="1" cellspacing="0">
+        <tr>
+            <th>ID</th>
+            <th>NAME</th>
+            <th>PASSWORD</th>
+        </tr>
+        <tr th:each="student : ${list}">
+            <td th:text="${student.id}"></td>
+            <td th:text="${student.username}"></td>
+            <td th:text="${student.password}"></td>
+        </tr>
+    </table>
+
+    <hr/>
+    <span th:text="${age} >= 18 ? '成年' : '未成年'"></span><br/>
+    <input type="text" th:value="${#dates.format(birthday,'yyyy-MM-dd HH:mm:ss')}"/><br/>
+
+</body>
+</html>

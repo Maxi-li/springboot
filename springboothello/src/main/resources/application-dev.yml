@@ -1,0 +1,6 @@
+
+resource:
+  imageServer: http://dev.images.com
+  emailServer: http://dev.email.com
+
+
