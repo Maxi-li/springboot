@@ -27,8 +27,10 @@ public class StudentController {
 		return "index";
 	}
 	
-	public string test(){
-	   system.out.println(.......)
+	public String test(){
+
+		System.out.println("....");
+	   return null;
 	}
 		
 
